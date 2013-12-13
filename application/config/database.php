@@ -4,12 +4,12 @@ return array
 (
         'default' => array
         (
-                'type'       => 'mysql',
+                'type'       => 'MySQL',
                 'connection' => array(
-                        'hostname'   => $_SERVER['DB1_HOST'].':'.$_SERVER['DB1_PORT'],
-                        'database'   => $_SERVER['DB1_NAME'],
-                        'username'   => $_SERVER['DB1_USER'],
-                        'password'   => $_SERVER['DB1_PASS'],
+                        'hostname'   => '.cleardb.com',
+                        'database'   => 'heroku_',
+                        'username'   => '',
+                        'password'   => '',
                         'persistent' => FALSE,
                 ),
                 'table_prefix' => '',

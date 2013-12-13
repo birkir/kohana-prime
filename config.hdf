@@ -1,0 +1,19 @@
+Server {
+	DefaultDocument = index.php
+}
+
+VirtualHost {
+	* {
+		RewriteRules {
+			* {
+				pattern = ^(.*)$
+				to = index.php$1
+				qsa = true
+			}
+		}
+		Disabled = false
+		Pattern = .*
+		ServerName = .herokuapp.com
+	}
+}
+
